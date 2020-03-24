@@ -203,6 +203,22 @@ nav,
     font-family: "Libre Baskerville", serif;
 }
 
+#inspiration h2,
+strong {
+    color: var(--beetroot-color);
+}
+
+#inspiration button {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+}
+
+#thinking h2 {
+    color: var(--beetroot-color);
+}
+
 #contest {
     background-color: rgba(61, 133, 198, 0.6);
     min-height: 50px;

@@ -72,6 +72,10 @@ body {
     font-weight: 300;
     font-style: normal;
     font-size: 18px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--beetroot-color);
+    position: relative;
 }
 
 h1 {
@@ -112,6 +116,7 @@ h3 {
 #splash h1 {
     line-height: 1.8;
     letter-spacing: 1.2px;
+    position: relative;
 }
 
 .beetroot-stamp {
@@ -119,10 +124,10 @@ h3 {
     font-style: italic;
     color: var(--beetroot-color);
     font-size: 18px;
-    transform: rotate(-22deg);
+    transform: translateX(50%) translateY(80%) rotate(-22deg);
     position: absolute;
-    top: 28px;
-    right: 60px;
+    top: 0;
+    right: 0;
 }
 
 .pink-text {
@@ -131,7 +136,12 @@ h3 {
 
 nav,
 #intro,
-#thinking {
+#thinking,
+#categories,
+#inspiration,
+#beet,
+#servings,
+#social {
     background-color: var(--white-color);
     min-height: 50px;
 }
@@ -219,9 +229,22 @@ strong {
     color: var(--beetroot-color);
 }
 
-#contest {
-    background-color: rgba(61, 133, 198, 0.6);
+#beet h1 {
+    color: var(--beetroot-color);
+}
+
+#contest,
+#contest2 {
+    background-color: var(--blue-color);
     min-height: 50px;
+}
+
+#contest button,
+#contest2 button {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
 }
 
 #facts {
@@ -236,6 +259,7 @@ strong {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#85043f', endColorstr='#3f031f', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
     min-height: 50px;
+    color: var(--white-color);
 }
 
 #event {
@@ -243,9 +267,38 @@ strong {
     min-height: 50px;
 }
 
+#event button {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+}
+
 footer {
     background-color: #fdedfd;
     min-height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    body:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 15px;
+        background-color: #fff;
+    }
+
+    body:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 15px;
+        background-color: #fff;
+    }
 }
 
 @media screen and (max-width: 767px) {}

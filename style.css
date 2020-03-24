@@ -1,0 +1,235 @@
+:root {
+    --beetroot-color: #6b0030;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --green-color: #0d8600;
+    --pink-color: #fca2be;
+    --blue-color: #8ab6dd;
+    --rosa-color: #fdedfd;
+}
+
+/* #F1B5F5 */
+
+
+@font-face {
+    font-family: 'libre baskerville';
+    src: url('fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+        url('fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre baskerville';
+    src: url('fonts/librebaskerville-bold-webfont.woff2') format('woff2'),
+        url('fonts/librebaskerville-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre baskerville';
+    src: url('fonts/librebaskerville-italic-webfont.woff2') format('woff2'),
+        url('fonts/librebaskerville-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'cooper hewitt';
+    src: url('fonts/cooperhewitt-heavy-webfont.woff2') format('woff2'),
+        url('fonts/cooperhewitt-heavy-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cooper hewitt';
+    src: url('fonts/cooperhewitt-light-webfont.woff2') format('woff2'),
+        url('fonts/cooperhewitt-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cooper hewitt';
+    src: url('fonts/cooperhewitt-medium-webfont.woff2') format('woff2'),
+        url('fonts/cooperhewitt-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cooper hewitt';
+    src: url('fonts/cooperhewitt-mediumitalic-webfont.woff2') format('woff2'),
+        url('fonts/cooperhewitt-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+body {
+    font-family: "cooper hewitt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: "cooper hewitt", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: "cooper hewitt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: "cooper hewitt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.beetroot-text {
+    color: var(--beetroot-color);
+    font-family: "Libre Baskerville", serif;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+}
+
+#splash h1,
+#splash h2 {
+    color: #fff;
+}
+
+#splash h1 {
+    line-height: 1.8;
+    letter-spacing: 1.2px;
+}
+
+.beetroot-stamp {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    color: var(--beetroot-color);
+    font-size: 18px;
+    transform: rotate(-22deg);
+    position: absolute;
+    top: 28px;
+    right: 60px;
+}
+
+.pink-text {
+    color: var(--pink-color);
+}
+
+nav,
+#intro,
+#thinking {
+    background-color: var(--white-color);
+    min-height: 50px;
+}
+
+#splash {
+    background-color: var(--pink-color);
+    min-height: 50px;
+}
+
+#intro h2 {
+    color: var(--beetroot-color);
+}
+
+#categories .categories-win {
+    background-color: var(--white-color);
+    border: 1px solid #000;
+    min-height: 220px;
+    box-shadow: 0px 6px 6px rgba(85, 85, 85, 0.49);
+}
+
+#categories .categories-win::after {
+    content: "";
+    position: absolute;
+    border: 5px dashed var(--blue-color);
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+}
+
+#categories .categories-win h2 {
+    font-size: 18px;
+    color: var(--beetroot-color);
+}
+
+#categories .categories-facts {
+    background-color: var(--beetroot-color);
+    border: 1px solid var(--black-color);
+    min-height: 220px;
+    box-shadow: 0px 6px 6px rgba(85, 85, 85, 0.49);
+}
+
+#categories .categories-facts h2 {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 32px;
+}
+
+#categories .categories-facts p {
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+#categories .categories-event {
+    background-color: var(--pink-color);
+    min-height: 220px;
+    box-shadow: 0px 6px 6px rgba(85, 85, 85, 0.49);
+}
+
+#categories .categories-event h2 {
+    color: var(--beetroot-color);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+#categories .categories-event p {
+    color: var(--white-color);
+    font-size: 14px;
+    font-family: "Libre Baskerville", serif;
+}
+
+#contest {
+    background-color: rgba(61, 133, 198, 0.6);
+    min-height: 50px;
+}
+
+#facts {
+    background: #85043f;
+    /* Old browsers */
+    background: -webkit-linear-gradient(bottom left, #85043f 0%, #3f031f 100%);
+    /* FF3.6-15 */
+    background: -o-linear-gradient(bottom left, #85043f 0%, #3f031f 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top right, #85043f 0%, #3f031f 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#85043f', endColorstr='#3f031f', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    min-height: 50px;
+}
+
+#event {
+    background-color: #fca2be;
+    min-height: 50px;
+}
+
+footer {
+    background-color: #fdedfd;
+    min-height: 50px;
+}
+
+@media screen and (max-width: 767px) {}

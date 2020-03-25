@@ -97,28 +97,30 @@
 
     <section id="contest">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6 ">
-                    <img class="img-fluid" src="imgs/Latte_boost_v3.png" alt="produkt">
+            <div class="row pb-4">
+                <div class="col-12 col-sm-6">
+                    <img class="your-design" src="imgs/latte_boost_dit_design.png" alt="produkt">
                 </div>
-                <div class="col-12 col-sm-6 p-4">
-                    <h2>Vis dit designtalent til omverdenen</h2>
-                    <p>Tilmeld dig konkurrencen om at skabe illustrationen, der skal pryde LATTE BOOST's nye drik med Beetroot</p>
-                    <p>Få emails om konkurrencen, lancerings-eventyret og nye tiltag</p>
-                    <input class=" d-block" type="text" id="name" name="Fornavn" placeholder="Fornavn">
-                    <input class=" d-block" type="email" id="mail" name="Email" placeholder="Email">
-                    <button class="mail-btn d-block">Tilmed</button>
+                <div class="col-12 col-sm-6 p-4 contest-text">
+                    <div class="px-2">
+                        <h2>Vis dit designtalent til omverdenen</h2>
+                        <p>Tilmeld dig konkurrencen om at skabe illustrationen, der skal pryde Latte Boosts nye drik med Beetroot</p>
+                        <p>Få emails om konkurrencen, lancerings-eventyret og nye tiltag</p>
+                        <input class=" d-block" type="text" id="name" name="Fornavn" placeholder="Fornavn">
+                        <input class=" d-block" type="email" id="mail" name="Email" placeholder="E-mail">
+                        <button class="mail-btn d-block">Tilmed</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="beet">
+    <section id="beet" class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1>LATTE BOOST</h1>
-                    <p>Vælg et lyserødt alternativ <br>Med samme lækre fylde som kaffe<br>- bare meget sundere</p>
+                    <h1 class="d-inline-block">LATTE BOOST <span class="beetroot-stamp">Beetroot</span></h1>
+                    <p class="pt-4">Vælg et lyserødt alternativ <br>Med samme lækre fylde som kaffe<br>- bare meget sundere</p>
                 </div>
                 <div class="col-8 offset-2 py-4">
                     <img class="img-fluid" src="imgs/beetroot.png" alt="rødbede">
@@ -127,42 +129,83 @@
         </div>
     </section>
 
-    <section id="thinking" class="py-4">
+    <section id="thinking">
         <div class="container">
             <div class="row d-flex flex-sm-row-reverse">
-                <div class="col-12 col-sm-6">
-                    <h2>Vi tænker mens vi nyder</h2>
-                    <ul class="py-4">
-                        <li>1 kr pr. kop går til støt brysterne</li>
-                        <li>Vores ingredienser er økologiske</li>
-                        <li>Koppen er FSC mærket</li>
-                        <li>Smagen er fra danske rødbeder</li>
-                    </ul>
-                </div>
                 <div class="col-12 col-sm-6 p-0">
-                    <img class="img-fluid" src="imgs/pink-hair-hairstyle-women-young-women.jpg" alt="produkt">
+                    <img class="img-fluid" src="imgs/cup-with-mouse.jpg" alt="produkt">
+                </div>
+                <div class="col-12 col-sm-6 p-4">
+                    <div class="px-2">
+                        <h2>Vi tænker mens vi nyder</h2>
+                        <ul class="py-4">
+                            <li class="icon icon-cancer">1 kr pr. kop går til støt brysterne</li>
+                            <li class="icon icon-oeko">Vores ingredienser er økologiske</li>
+                            <li class="icon icon-fsc">Koppen er FSC mærket</li>
+                            <li class="icon icon-flag">Smagen er fra danske rødbeder</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="facts">
+    <section id="facts" class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <h2>Wow dine veninder</h2>
-                    <h3><span class="number">6</span>Facts om rødbeder</h3>
+                    <h3><span class="d-block py-4 number">6</span>Facts om rødbeder</h3>
                 </div>
-                <div class="col-12 d-sm-none"></div>
-                <div class="col-6 d-none d-sm-inline-block">
-                    <p>Rødbeder er gode for dit mentale helbred. De indeholder nemlig betain, og det bruges også til at behandle visse former for depression</p>
-                    <p>Hvis du træner, er det en god ide at få masser af rødbeder. De indeholder nemlig et nitrat, der er med til at styrke din udholdenhed. Studier har faktisk vist, at du vil kunne træne op til 16 procent længere ved regelmæssig indtagelse af rødbeder</p>
-                    <p>Nitrater i rødbeder er med til at forebygge Alzheimers og demens. Nitrater giver et bedre blodomløb og sender masser af blod til din hjerne</p>
+                <div class="col-12 d-sm-none">
+                    <div id="facts-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#facts-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#facts-carousel" data-slide-to="1"></li>
+                            <li data-target="#facts-carousel" data-slide-to="2"></li>
+                            <li data-target="#facts-carousel" data-slide-to="3"></li>
+                            <li data-target="#facts-carousel" data-slide-to="4"></li>
+                            <li data-target="#facts-carousel" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p>Rødbeder er gode for dit mentale helbred. De indeholder nemlig betain, og det bruges også til at behandle visse former for depression.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>Rødbeder er en rig kilde til mineraler og vitaminer med deres høje indhold af magnesium, natrium, calcium og jern samt C og A vitamin.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>Hvis du træner, er det en god ide at få masser af rødbeder. De indeholder nemlig et nitrat, der er med til at styrke din udholdenhed. Studier har faktisk vist, at du vil kunne træne op til 16 procent længere ved regelmæssig indtagelse af rødbeder.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>Rødbeder er med deres høje indhold af A vitamin gode for din hud og er med til at opretholde sunde slimhinder.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>Nitrater i rødbeder er med til at forebygge Alzheimers og demens. Nitrater giver et bedre blodomløb og sender masser af blod til din hjerne.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>Rødbeder er også med til at sænke dit blodtryk. Et studie har vist, at rødbede kan have effekt på dit blodtryk og hjælpe din krop til et bedre blodomløb. De er samtidig med til at rense dit blod.</p>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#facts-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#facts-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-6 d-none d-sm-inline-block">
-                    <p>Rødbeder er en rig kilde til mineraler og vitaminer med deres høje indhold af magnesium, natrium, calcium og jern samt C og A vitamin</p>
-                    <p>Rødbeder er med deres høje indhold af A vitamin gode for din hud og er med til at opretholde sunde slimhinder</p>
-                    <p>Rødbeder er også med til at sænke dit blodtryk. Et studie har vist, at rødbede kan have effekt på dit blodtryk og hjælpe din krop til et bedre blodomløb. De er samtidig med til at rense dit blod</p>
+                    <p>Rødbeder er gode for dit mentale helbred. De indeholder nemlig betain, og det bruges også til at behandle visse former for depression.</p>
+                    <p>Hvis du træner, er det en god ide at få masser af rødbeder. De indeholder nemlig et nitrat, der er med til at styrke din udholdenhed. Studier har faktisk vist, at du vil kunne træne op til 16 procent længere ved regelmæssig indtagelse af rødbeder.</p>
+                    <p>Nitrater i rødbeder er med til at forebygge Alzheimers og demens. Nitrater giver et bedre blodomløb og sender masser af blod til din hjerne.</p>
+                </div>
+                <div class="col-6 d-none d-sm-inline-block">
+                    <p>Rødbeder er en rig kilde til mineraler og vitaminer med deres høje indhold af magnesium, natrium, calcium og jern samt C og A vitamin.</p>
+                    <p>Rødbeder er med deres høje indhold af A vitamin gode for din hud og er med til at opretholde sunde slimhinder.</p>
+                    <p>Rødbeder er også med til at sænke dit blodtryk. Et studie har vist, at rødbede kan have effekt på dit blodtryk og hjælpe din krop til et bedre blodomløb. De er samtidig med til at rense dit blod.</p>
                 </div>
             </div>
         </div>
@@ -170,17 +213,21 @@
 
     <section id="contest2">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6">
-                    <h2>Design som en pro</h2>
-                    <h3>Få tips fra vores designere og din egen template</h3>
-                    <p>Det koster kun din email og du vil få en template du kan designe på, som de rigtige designere gør. Du får desuden også mail om konkurrencen, hvor dit design kan komme på vores kopper</p>
-                    <p>Du kan på chrichri.dk læse om hvordan vores designere arbejder og få tips og tricks der vil løfte dine idéer til et helt nyt level</p>
+            <div class="row py-4">
+                <div class="col-12 col-sm-6 px-4 pt-4">
+                    <div class="px-2">
+                        <h2>Design som en pro</h2>
+                        <h3 class="py-3">Få tips fra vores designere og din egen template</h3>
+                        <p>Det koster kun din email og du vil få en template du kan designe på, som de rigtige designere gør. Du får desuden også mail om konkurrencen, hvor dit design kan komme på vores kopper</p>
+                        <p>Du kan på chrichri.dk læse om hvordan vores designere arbejder og få tips og tricks der vil løfte dine idéer til et helt nyt level</p>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6">
-                    <input class="d-block" type="text" id="name" name="Fornavn" placeholder="Fornavn">
-                    <input class=" d-block" type="email" id="mail" name="Email" placeholder="Email">
-                    <button class="mail-btn">Tilmed</button>
+                <div class="col-12 col-sm-6 px-4 pb-4">
+                    <div class="px-2">
+                        <input class="d-block" type="text" id="name" name="Fornavn" placeholder="Fornavn">
+                        <input class=" d-block" type="email" id="mail" name="Email" placeholder="Email">
+                        <button class="mail-btn">Tilmed</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,11 +236,27 @@
     <section id="servings">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h2>Pink it up</h2>
-                    <h3>Serveringsforslag</h3>
+                <div class="col-12 p-4">
+                    <div class="px-2 text-center">
+                        <h2>Pink it up</h2>
+                        <h3>Serveringsforslag</h3>
+                    </div>
                 </div>
-                <div class="col-12 d-sm-none"></div>
+                <div class="col-12 px-0 pb-4 mb-4 d-sm-none">
+                    <div id="servings-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imgs/img-slide-1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imgs/img-slide-2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imgs/img-slide-3.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-12 d-none d-sm-block"></div>
             </div>
         </div>
@@ -202,18 +265,19 @@
     <section id="event">
         <div class="container">
             <div class="row d-flex flex-sm-row-reverse">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 px-0">
                     <img class="img-fluid" src="imgs/PinkItUp.png" alt="event">
                 </div>
-                <div class="col-12 col-sm-6">
-                    <h2>Event</h2>
-                    <p>Kom til et helt igennem pink event.</p>
-                    <p>I samarbejde med Kræftens bekæmpelse vil LATTE BOOST Beetroot booste dit insta-feed fuld af farve.</p>
-                    <p>Smag - duft og bliv inspireret, når foråret sætter i gang og de lyserøde blomster springer ud.</p>
-                    <p>Følg med på både Facebook og Instagram og hold dig opdateret med dato og konkurrencer.</p>
-                    <p>Eventet foregår på den Sorte Plads Kbh N, som med sin store sorte- / hvidstribede farve står i kontrast til de smukke lyserøde træer.</p>
-                    <p>Der er pink goodiebags til de første 200 tilmeldte</p>
-                    <button>Meld mig til nyhedsbrevet og bliv opdateret</button>
+                <div class="col-12 col-sm-6 p-4">
+                    <div class="px-2">
+                        <h2>Event</h2>
+                        <p>Kom til et helt igennem pink event.</p>
+                        <p>I samarbejde med Kræftens Bekæmpelse vil Latte Boost Beetroot booste dit insta-feed fuld af farve.</p>
+                        <p>Smag, duft og bliv inspireret, når foråret sætter i gang og de lyserøde blomster springer ud.</p>
+                        <p>Eventet foregår på den Sorte&nbsp;Plads, København&nbsp;N, som med sin store sort/hvid-stribede farve står i kontrast til de smukke lyserøde træer.</p>
+                        <p>Der er pink goodiebags til de første 200 tilmeldte.</p>
+                        <button class="px-4 py-2">Gå til tilmelding &#8250;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,21 +286,43 @@
     <section id="social">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h2>Del dine fantastiske idéer med os</h2>
+                <div class="col-12 p-4">
+                    <div class="px-2">
+                        <h2>Del dine fantastiske idéer med os</h2>
+                        <p>Vi vil elske at se hvad du kan finde på, så hvis du deler det med #LetThePinkBegin, så udvælger vi nogle som bliver reposted på vores instagram, og vist her på siden.</p>
+                    </div>
                 </div>
                 <div class="col-12"></div>
-                <div class="col-12"></div>
+                <div class="col-12 p-4">
+                    <div class="px-2 text-center">
+                        <h2 class="hashtag">#LetThePinkBegin</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-4">
+            <div class="row pb-4">
+                <div class="col-12 col-sm-4 p-4">
+                    <div class="px-2">
+                        <p><strong>Adresse</strong><br>Lattevej 22,<br>2200 København N</p>
+                        <p><strong>Telefon</strong><br>12345678</p>
+                        <p><strong>Sociale Medier</strong></p>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-8"></div>
+                <div class="col-12 col-sm-8 p-4">
+                    <div class="px-2">
+                        <h2>Bliv en del af alt det sjove</h2>
+                        <p>Få nye serveringsforslag, kreative ideer til at bruge den brugte kop,
+                            nyeste info om events og konkurrencer.
+                            Meld dig til med dit navn og e-mail og <em class="pink-text">Let The Pink Begin</em></p>
+                        <input class="d-block" type="text" id="name" name="Fornavn" placeholder="Fornavn">
+                        <input class=" d-block" type="email" id="mail" name="Email" placeholder="Email">
+                        <button class="mail-btn">Tilmed</button>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

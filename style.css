@@ -106,6 +106,7 @@ h3 {
 
 .logo h1 {
     text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 #splash h1,
@@ -113,7 +114,8 @@ h3 {
     color: #fff;
 }
 
-#splash h1 {
+#splash h1,
+#beet h1 {
     line-height: 1.8;
     letter-spacing: 1.2px;
     position: relative;
@@ -132,6 +134,7 @@ h3 {
 
 .pink-text {
     color: var(--pink-color);
+    white-space: nowrap;
 }
 
 nav,
@@ -213,11 +216,6 @@ nav,
     font-family: "Libre Baskerville", serif;
 }
 
-#inspiration h2,
-strong {
-    color: var(--beetroot-color);
-}
-
 #inspiration button {
     background-color: var(--green-color);
     color: var(--white-color);
@@ -225,7 +223,8 @@ strong {
     font-size: 14px;
 }
 
-#thinking h2 {
+#inspiration h2,
+#inspiration strong {
     color: var(--beetroot-color);
 }
 
@@ -233,18 +232,103 @@ strong {
     color: var(--beetroot-color);
 }
 
-#contest,
 #contest2 {
     background-color: var(--blue-color);
     min-height: 50px;
 }
 
+#contest input,
+#contest2 input,
+footer input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 1;
+    margin-top: 10px;
+    border: 1px solid var(--beetroot-color);
+    color: var(--beetroot-color);
+}
+
 #contest button,
-#contest2 button {
-    background-color: var(--green-color);
+#contest2 button,
+footer button {
+    background-color: var(--beetroot-color);
     color: var(--white-color);
     font-family: "Libre Baskerville", serif;
-    font-size: 14px;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none
+}
+
+#contest {
+    background-color: var(--white-color);
+    padding-top: 30vw;
+    color: var(--white-color);
+}
+
+#contest .row {
+    background-color: var(--blue-color);
+    position: relative;
+}
+
+#contest .contest-text {
+    margin-top: 50vw;
+}
+
+.your-design {
+    position: absolute;
+    width: 50vw;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-35%);
+}
+
+#thinking h2 {
+    color: var(--beetroot-color);
+}
+
+#thinking ul {
+    list-style: none;
+    padding-left: 80px;
+    margin-bottom: 0;
+}
+
+#thinking .icon {
+    margin-bottom: 20px;
+    line-height: 45px;
+    position: relative;
+}
+
+#thinking .icon:last-of-type {
+    margin-bottom: 0;
+}
+
+#thinking .icon:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    left: -70px;
+    background-size: contain;
+    background-position: center center;
+}
+
+#thinking .icon.icon-cancer:before {
+    background-image: url(imgs/cancer.png);
+}
+
+#thinking .icon.icon-oeko:before {
+    background-image: url(imgs/oeko.png);
+}
+
+#thinking .icon.icon-fsc:before {
+    background-image: url(imgs/fsc.png);
+}
+
+#thinking .icon.icon-flag:before {
+    background-image: url(imgs/flag.png);
 }
 
 #facts {
@@ -262,6 +346,34 @@ strong {
     color: var(--white-color);
 }
 
+#facts .number {
+    font-size: 300%;
+}
+
+#facts .carousel-inner {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    margin: 30px auto 0;
+    height: 300px;
+}
+
+#facts .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border-top: none;
+    border-bottom: none;
+}
+
+#contest2 {
+    color: var(--white-color);
+}
+
+#contest2 h3 {
+    font-style: italic;
+}
+
 #event {
     background-color: #fca2be;
     min-height: 50px;
@@ -272,6 +384,13 @@ strong {
     color: var(--white-color);
     font-family: "Libre Baskerville", serif;
     font-size: 14px;
+    width: 100%;
+}
+
+.hashtag {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    color: var(--pink-color);
 }
 
 footer {

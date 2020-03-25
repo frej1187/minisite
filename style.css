@@ -99,6 +99,20 @@ h3 {
     font-size: 20px;
 }
 
+button {
+    font-family: "Libre Baskerville", serif;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+}
+
+hr {
+    height: 3px;
+    background: linear-gradient(to right, rgba(13, 134, 0, 1) 0%, rgba(107, 0, 48, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
 .beetroot-text {
     color: var(--beetroot-color);
     font-family: "Libre Baskerville", serif;
@@ -252,8 +266,6 @@ nav,
 #inspiration button {
     background-color: var(--green-color);
     color: var(--white-color);
-    font-family: "Libre Baskerville", serif;
-    font-size: 14px;
 }
 
 #inspiration h2,
@@ -286,12 +298,6 @@ footer input {
 #contest2 button {
     background-color: var(--beetroot-color);
     color: var(--white-color);
-    font-family: "Libre Baskerville", serif;
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 16px;
-    margin-top: 10px;
-    border: none
 }
 
 #contest {
@@ -406,6 +412,10 @@ footer input {
     font-style: italic;
 }
 
+.img-border {
+    border: 1px solid #707070;
+}
+
 #event {
     background-color: #fca2be;
     min-height: 50px;
@@ -414,9 +424,6 @@ footer input {
 #event button {
     background-color: var(--green-color);
     color: var(--white-color);
-    font-family: "Libre Baskerville", serif;
-    font-size: 14px;
-    width: 100%;
 }
 
 .hashtag {
@@ -427,7 +434,46 @@ footer input {
 
 footer {
     background-color: #fdedfd;
+    background-color: var(--beetroot-color);
     min-height: 50px;
+}
+
+footer h2,
+footer p {
+    color: var(--white-color);
+}
+
+footer button {
+    background-color: var(--pink-color);
+    color: var(--black-color);
+}
+
+@media screen and (min-width: 576px) {
+    .splash-imgs {
+        margin-bottom: 10vw;
+    }
+
+    .cups-overlay {
+        left: 98%;
+        bottom: -25%;
+    }
+
+    #contest {
+        margin-top: 30vw;
+        padding-top: 0;
+        position: relative;
+        background-color: var(--blue-color);
+    }
+
+    #contest:before {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        top: -30vw;
+        left: 0;
+        width: 100%;
+        height: 30vw;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -439,6 +485,7 @@ footer {
         height: 100%;
         width: 15px;
         background-color: #fff;
+        z-index: 100;
     }
 
     body:after {
@@ -449,7 +496,62 @@ footer {
         height: 100%;
         width: 15px;
         background-color: #fff;
+        z-index: 100;
+    }
+
+    .splash-imgs {
+        margin-bottom: 5vw;
+    }
+
+    .cups-overlay {
+        left: 98%;
+        bottom: -10%;
+    }
+
+    .your-design {
+        width: 380px;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #contest {
+        margin-top: 5vw;
+        padding-top: 0;
+        position: relative;
+        background-color: var(--blue-color);
+    }
+
+    #contest:before {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        top: -5vw;
+        left: 0;
+        width: 100%;
+        height: 5vw;
+    }
+
+    #contest .contest-text {
+        margin-top: 0;
+    }
+
+    #thinking .icon {
+        margin-bottom: 40px;
+        line-height: 25px;
+        position: relative;
     }
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (min-width: 992px) {
+    .your-design {
+        width: 320px;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #thinking .icon {
+        margin-bottom: 20px;
+        line-height: 45px;
+        position: relative;
+    }
+}

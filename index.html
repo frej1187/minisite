@@ -4,27 +4,46 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Latte Boost - Beetroot</title>
+    <meta name="description" content="Et sundt alternativ til kaffen, med fantastisk flot farve fra rødbeden, skøn smag og fantastiske egenskaber. Prøv en Latte Boost med rødbede smag i dag.">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
 
-    <nav class="p-2">
-        <div class="container">
-            <div class="row">
-                <div class="logo col-10 col-md-4 pl-4 py-2">
-                    <h1 class="m-0 px-2">Latte Boost</h1>
-                </div>
-                <div class="burger col-2 col-md-8"></div>
-            </div>
+<body class="preload">
+    <div class="preloader"></div>
+
+    <nav class="navbar navbar-light bg-white navbar-expand-sm">
+        <a class="navbar-brand logo text-beetroot" href="#">
+            <h1 class="m-0 px-2">Latte Boost</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-sm-end" id="navbar-list-2">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-beetroot" href="#contest">Konkurrence</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-beetroot" href="#event">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-beetroot" href="#contact">Kontakt</a>
+                </li>
+                <li class="nav-item social-icons">
+                    <a href="https://www.facebook.com/"><img src="icons/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/clarify_mmd"><img src="icons/instagram.svg" alt="Instagram"></a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <section id="splash" class="py-4">
         <div class="container">
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-12 text-center">
                     <h1 class="d-inline-block">LATTE BOOST<span class="beetroot-stamp">Beetroot</span></h1>
                 </div>
@@ -37,6 +56,7 @@
                 </div>
                 <div class="col-12 text-center">
                     <p><em class="beetroot-text">Sæt kulør på hverdagen</em></p>
+                    <img src="icons/arrow.png" class="mt-4 icon-arrow animated infinite pulse duration-3s" alt="Scroll ned for mere info">
                 </div>
             </div>
         </div>
@@ -45,8 +65,8 @@
     <section id="intro">
         <div class="container">
             <div class="row">
-                <div class="col-12 p-4">
-                    <div class="px-2 my-4">
+                <div class="col-12 p-4 my-4">
+                    <div class="px-2 my-5">
                         <h2>Sæt kulør på din latte addiction</h2>
                         <hr>
                         <p>Vælg en sund variant med rødbedens farve, smag og fantastiske egenskaber.</p>
@@ -59,26 +79,26 @@
     </section>
 
     <section id="categories">
-        <div class="container">
-            <div class="row d-md-flex justify-content-md-around">
-                <div class="col-6 offset-3 offset-md-0 col-md-3 my-4 p-4 d-flex align-items-center justify-content-center
-            text-center categories-win">
+        <div class="container pb-5">
+            <div class="row d-md-flex justify-content-md-around pb-5">
+                <a href="#contest" class="col-6 offset-3 offset-md-0 col-md-3 my-4 p-4 d-flex align-items-center justify-content-center
+            text-center categories-win my-4">
                     <h2>Vind design konkurrencen</h2>
-                </div>
-                <div class="col-6 offset-3 offset-md-0 col-md-3 my-4 p-4 text-center categories-facts">
+                </a>
+                <a href="#facts" class="col-6 offset-3 offset-md-0 col-md-3 my-4 p-4 text-center categories-facts my-4">
                     <h2 class="py-3">6 facts</h2>
                     <p>Du <em>ikke</em> vidste<br> om rødbeden</p>
-                </div>
-                <div class="col-6 offset-3 offset-md-0 col-md-3 my-4 p-4 categories-event">
+                </a>
+                <a href="#event" class="col-6 offset-3 offset-md-0 col-md-3 my-4 p-4 categories-event my-4">
                     <h2 class="py-3">Event</h2>
                     <p>Kom til et helt igennem pink lanceringsevent som kan booste dit instagramfeed</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
     <section id="inspiration">
-        <div class="container">
+        <div class="container pb-5">
             <div class="row">
                 <div class="col-12 col-md-6 px-0 my-4">
                     <img class="img-fluid" src="imgs/pink-beetroot-latte-and.jpg" alt="closeup">
@@ -101,7 +121,7 @@
     <section id="contest">
         <div class="container">
             <div class="row pb-4 pt-md-4">
-                <div class="col-12 col-md-6 my-4">
+                <div class="col-12 col-md-6 my-5">
                     <img class="your-design" src="imgs/latte_boost_dit_design.png" alt="produkt">
                 </div>
                 <div class="col-12 col-md-6 p-4 contest-text">
@@ -121,7 +141,7 @@
     <section id="beet" class="py-4">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center my-4">
+                <div class="col-12 text-center pt-5 my-5">
                     <h1 class="d-inline-block">LATTE BOOST <span class="beetroot-stamp">Beetroot</span></h1>
                     <p class="pt-4">Vælg et lyserødt alternativ <br>Med samme lækre fylde som kaffe<br>- bare meget sundere</p>
                 </div>
@@ -133,13 +153,13 @@
     </section>
 
     <section id="thinking">
-        <div class="container">
-            <div class="row d-flex flex-md-row-reverse pb-md-4">
-                <div class="col-12 col-md-6 p-0 my-4">
+        <div class="container pb-5">
+            <div class="row d-flex flex-md-row-reverse py-5">
+                <div class="col-12 col-md-6 p-0">
                     <img class="img-fluid" src="imgs/cup-with-mouse.jpg" alt="produkt">
                 </div>
-                <div class="col-12 col-md-6 p-4">
-                    <div class="px-2">
+                <div class="col-12 col-md-6">
+                    <div class="px-2 py-5 py-sm-0">
                         <h2>Vi tænker mens vi nyder</h2>
                         <hr>
                         <ul class="py-4">
@@ -154,8 +174,8 @@
         </div>
     </section>
 
-    <section id="facts" class="py-4">
-        <div class="container">
+    <section id="facts" class="py-4 pb-5">
+        <div class="container my-3">
             <div class="row">
                 <div class="col-12 text-center my-4">
                     <h2>Wow dine veninder</h2>
@@ -203,16 +223,16 @@
                 </div>
                 <div class="col-6 d-none d-md-inline-block py-4 pl-4">
                     <div class="pl-2">
-                        <p class="mb-4">Rødbeder er gode for dit mentale helbred. De indeholder nemlig betain, og det bruges også til at behandle visse former for depression.</p>
-                        <p class="mb-4">Hvis du træner, er det en god ide at få masser af rødbeder. De indeholder nemlig et nitrat, der er med til at styrke din udholdenhed. Studier har faktisk vist, at du vil kunne træne op til 16 procent længere ved regelmæssig indtagelse af rødbeder.</p>
-                        <p class="mb-4">Nitrater i rødbeder er med til at forebygge Alzheimers og demens. Nitrater giver et bedre blodomløb og sender masser af blod til din hjerne.</p>
+                        <p class="mb-4 animated fadeIn delay-1s">Rødbeder er gode for dit mentale helbred. De indeholder nemlig betain, og det bruges også til at behandle visse former for depression.</p>
+                        <p class="mb-4 animated fadeIn delay-3s">Hvis du træner, er det en god ide at få masser af rødbeder. De indeholder nemlig et nitrat, der er med til at styrke din udholdenhed. Studier har faktisk vist, at du vil kunne træne op til 16 procent længere ved regelmæssig indtagelse af rødbeder.</p>
+                        <p class="mb-4 animated fadeIn delay-5s">Nitrater i rødbeder er med til at forebygge Alzheimers og demens. Nitrater giver et bedre blodomløb og sender masser af blod til din hjerne.</p>
                     </div>
                 </div>
                 <div class="col-6 d-none d-md-inline-block py-4 pr-4">
                     <div class="pr-2">
-                        <p class="mb-4">Rødbeder er en rig kilde til mineraler og vitaminer med deres høje indhold af magnesium, natrium, calcium og jern samt C og A vitamin.</p>
-                        <p class="mb-4">Rødbeder er med deres høje indhold af A vitamin gode for din hud og er med til at opretholde sunde slimhinder.</p>
-                        <p class="mb-4">Rødbeder er også med til at sænke dit blodtryk. Et studie har vist, at rødbede kan have effekt på dit blodtryk og hjælpe din krop til et bedre blodomløb. De er samtidig med til at rense dit blod.</p>
+                        <p class="mb-4 animated fadeIn delay-2s">Rødbeder er en rig kilde til mineraler og vitaminer med deres høje indhold af magnesium, natrium, calcium og jern samt C og A vitamin.</p>
+                        <p class="mb-4 animated fadeIn delay-4s">Rødbeder er med deres høje indhold af A vitamin gode for din hud og er med til at opretholde sunde slimhinder.</p>
+                        <p class="mb-4 animated fadeIn delay-6s">Rødbeder er også med til at sænke dit blodtryk. Et studie har vist, at rødbede kan have effekt på dit blodtryk og hjælpe din krop til et bedre blodomløb. De er samtidig med til at rense dit blod.</p>
                     </div>
                 </div>
             </div>
@@ -222,7 +242,7 @@
     <section id="contest2">
         <div class="container">
             <div class="row py-4">
-                <div class="col-12 col-md-6 px-4 pt-4">
+                <div class="col-12 col-md-6 px-4 pt-4 my-4">
                     <div class="px-2">
                         <h2>Design som en pro</h2>
                         <h3 class="py-3">Få tips fra vores designere og din egen template</h3>
@@ -244,8 +264,8 @@
     <section id="servings">
         <div class="container">
             <div class="row">
-                <div class="col-12 p-4">
-                    <div class="px-2 text-center">
+                <div class="col-12 p-4 my-4">
+                    <div class="px-2 my-4 text-center">
                         <h2>Pink it up</h2>
                         <hr>
                         <h3>Serveringsforslag</h3>
@@ -266,7 +286,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-none mb-4 d-sm-flex justify-content-around">
+                <div class="col-12 d-none mb-4 d-sm-flex justify-content-around pb-5">
                     <div class="col-4">
                         <img class="d-block w-100 img-border" src="imgs/img-slide-1.jpg" alt="tip1">
                     </div>
@@ -287,7 +307,7 @@
                 <div class="col-12 col-md-6 px-0">
                     <img class="img-fluid" src="imgs/PinkItUp.png" alt="event">
                 </div>
-                <div class="col-12 col-md-6 p-4">
+                <div class="col-12 col-md-6 p-4 my-5">
                     <div class="px-2">
                         <h2>Event</h2>
                         <hr>
@@ -304,16 +324,18 @@
     </section>
 
     <section id="social">
-        <div class="container">
+        <div class="container pb-4">
             <div class="row">
-                <div class="col-12 p-4">
-                    <div class="px-2">
+                <div class="col-12 p-4 mt-5 mb-3">
+                    <div class="px-2 my-2">
                         <h2>Del dine fantastiske idéer med os</h2>
                         <hr>
                         <p>Vi vil elske at se hvad du kan finde på, så hvis du deler det med #LetThePinkBegin, så udvælger vi nogle som bliver reposted på vores instagram, og vist her på siden.</p>
                     </div>
                 </div>
-                <div class="col-12"></div>
+                <div class="col-12">
+                    <div id="instagram-feed1" class="instagram_feed"></div>
+                </div>
                 <div class="col-12 p-4">
                     <div class="px-2 text-center">
                         <h2 class="hashtag">#LetThePinkBegin</h2>
@@ -323,17 +345,21 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contact">
         <div class="container">
-            <div class="row pb-4">
-                <div class="col-12 col-sm-5 col-md-4 p-4">
+            <div class="row">
+                <div class="col-12 col-sm-5 col-md-4 p-4 my-4">
                     <div class="px-2">
                         <p><strong>Adresse</strong><br>Lattevej 22,<br>2200 København N</p>
                         <p><strong>Telefon</strong><br>12345678</p>
                         <p><strong>Sociale Medier</strong></p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><img src="icons/facebook.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/clarify_mmd"><img src="icons/instagram.svg" alt="Instagram"></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-7 col-md-8 p-4">
+                <div class="col-12 col-sm-7 col-md-8 p-5">
                     <div class="px-2">
                         <h2>Bliv en del af alt det sjove</h2>
                         <p>Få nye serveringsforslag, kreative ideer til at bruge den brugte kop,
@@ -350,9 +376,10 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="jquery.instagramFeed.js"></script>
     <script src="script.js"></script>
 </body>
 

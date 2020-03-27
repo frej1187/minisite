@@ -130,13 +130,18 @@ h3 {
     font-size: 20px;
 }
 
-button:not(.navbar-toggler) {
+button:not(.navbar-toggler),
+.button {
     font-family: "Libre Baskerville", serif;
     width: 100%;
     padding: 10px 15px;
     font-size: 16px;
     margin-top: 10px;
     border: none;
+}
+
+.button:hover {
+    text-decoration: none;
 }
 
 hr {
@@ -306,9 +311,11 @@ nav,
     box-shadow: 0px 3px 3px rgba(85, 85, 85, 0.49);
 }
 
-#inspiration button {
+#inspiration button,
+#inspiration .button {
     background-color: var(--green-color);
     color: var(--white-color);
+
 }
 
 #inspiration h2,
@@ -457,6 +464,16 @@ footer input {
 
 .img-border {
     border: 1px solid #707070;
+}
+
+#article {
+    background-color: var(--white-color);
+    color: var(--beetroot-color);
+}
+
+#article a {
+    text-decoration: none;
+    color: var(--beetroot-color):
 }
 
 #event {
